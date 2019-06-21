@@ -17,7 +17,7 @@ If you want to run the Makerobos conversational landing page in you your server,
 
 ## Example for docker:
 ```
-docker run -e BOT=<bot-id> -p 127.0.0.1:80:4800/tcp makerobos/landing_page:latest node dist/server
+docker run -e BOT=<bot-id> -p 127.0.0.1:8000:4800/tcp makerobos/landing_page:latest node dist/server
 ```
 
 ## Example of docker-compose:
