@@ -1,10 +1,10 @@
 # Makerobos landing page
 
-## create free account in makerobos.com
+## Create free account in makerobos.com
 
 visit https://www.makerobos.com/user/register to create a new account or jusg login if you already have one
 
-## getting bot-id
+## Getting bot-id
 after login you would be redirected to makerobos dashboard
 1. just pick any plan, then pick a prebuilt bot from the templates or pick th blank one if you wish to create from scratch.
 2. Enter bot details like bot name, and website name where you want to run you bot, if you don't have a website just enter any valid web address (you can change it later anytime)
@@ -15,12 +15,12 @@ after login you would be redirected to makerobos dashboard
 
 If you want to run the Makerobos conversational landing page in you your server, just pull this docker image and pass the bot-id as environment variable with key BOT
 
-## example for docker:
+## Example for docker:
 ```
 docker run -e BOT=<bot-id> -p 127.0.0.1:80:4800/tcp makerobos/landing_page:latest node dist/server
 ```
 
-## example of docker-compose:
+## Example of docker-compose:
 ```yml
 version: '3'
 services:
@@ -37,7 +37,7 @@ services:
 then you can proxy pass to you web server
 here is how you can do it using nginx:
 
-## nginx server conf
+## Nginx server conf
 ```
 server {
     server_name your.server.com;
